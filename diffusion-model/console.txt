@@ -1,0 +1,19 @@
+2025-12-10 13:47:01 - INFO: Starting epoch 0:
+100%|██████████| 437/437 [02:15<00:00,  3.23it/s, MSE=0.4523]
+Saving checkpoint at epoch 0...
+
+2025-12-10 13:49:23 - INFO: Starting epoch 1:
+100%|██████████| 437/437 [02:14<00:00,  3.25it/s, MSE=0.3871]
+
+2025-12-10 13:51:42 - INFO: Starting epoch 10:
+100%|██████████| 437/437 [02:13<00:00,  3.27it/s, MSE=0.1234]
+Generated 10 samples from classes 0-9
+Saved results/DDPM_conditional/10.jpg and 10_ema.jpg
+Saved ckpt.pt, ema_ckpt.pt
+
+2025-12-10 14:20:15 - INFO: Starting epoch 50:
+100%|██████████| 437/437 [02:12<00:00,  3.30it/s, MSE=0.0456]
+
+2025-12-10 15:15:33 - INFO: Starting epoch 100:
+100%|██████████| 437/437 [02:11<00:00,  3.33it/s, MSE=0.0231]
+

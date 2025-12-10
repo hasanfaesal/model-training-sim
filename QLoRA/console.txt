@@ -1,0 +1,28 @@
+2025-12-10 13:48:01 - transformers.trainer - INFO: ***** Running training *****
+Num examples = 20000
+Num Epochs = 3
+Instantaneous batch size per device = 2
+Total train batch size (w. parallel, distributed & accumulation) = 4
+Gradient Accumulation steps = 4
+Total optimization steps = 15000
+lr scheduler warmup steps = 100
+
+***** Running training *****
+  0%|          | 0/15000 [00:00<?, ?it/s]
+Step   100: {'loss': 1.2345, 'learning_rate': 1.98e-4, 'epoch': 0.03, 'train_runtime': 12.5}
+Step   500: {'loss': 0.9876, 'learning_rate': 1.95e-4, 'epoch': 0.17}
+Step  1000: {'loss': 0.7654, 'learning_rate': 1.80e-4, 'epoch': 0.33} | eval_loss=0.7123, eval_runtime=45.2s
+Saving model checkpoint to ./qlora-llama/checkpoint-1000
+
+***** Running Evaluation *****
+ 33%|███▎      | 5000/15000 [1:45:23<3:30:46,  2.15it/s]
+Step  5000: {'loss': 0.4567, 'learning_rate': 1.20e-4, 'epoch': 1.0}
+eval_loss=0.3891, perplexity=1.475
+
+***** Running Evaluation *****
+100%|██████████| 15000/15000 [5:12:34<00:00,  0.80it/s]
+Step 15000: {'loss': 0.2345, 'learning_rate': 2e-6, 'epoch': 3.0}
+eval_loss=0.1987, perplexity=1.219
+Training completed. Merging LoRA adapters...
+Saved qlora-llama-final-adapter_model.safetensors (18MB)
+
